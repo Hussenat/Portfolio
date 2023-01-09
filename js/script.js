@@ -209,6 +209,7 @@ const aside = document.querySelector(".aside"),
 // Alternative way of calling asideSectionTogglerBtn
 navToggleBtn.addEventListener("click", asideSectionTogglerBtn);
 
+
 function asideSectionTogglerBtn() {
   // console.log(aside);
   aside.classList.toggle("open");
@@ -218,12 +219,10 @@ function asideSectionTogglerBtn() {
   }
 }
 
-// popup download button for cv
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
 }
 
 // preloader

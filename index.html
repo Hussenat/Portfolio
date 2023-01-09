@@ -161,10 +161,55 @@
                                         </div>
                                         
                                     </div>
-
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <button class="btn" onclick="openForm()">Download CV</button>
+                                            <!-- <a  target="_" class="btn">Download CV</a> -->                                      
+                                               <div class="popup btn"  onclick="myFunction()"> Download CV
+                                                <span class="popuptext" id="myPopup"> 
+                                                    <p style="color: #ffffff;
+                                                              font-size: small;
+                                                              cursor: none;
+                                                              -webkit-transition: all 0.3s ease;
+                                                              transition: all 0.3s ease;"
+                                                              >
+                                                              Hi! click on any format to download my cv
+                                                            </p>
+                                                    <a href="https://drive.google.com/file/d/1hZzONN6p0TJOjUrCy8uxZmjLVxdxCKoL/view?usp=share_link"  target="_">
+                                                        <button style="
+                                                            font-size: 12px;
+                                                            font-weight: 300;
+                                                            padding: 5px 3px;
+                                                            color: #3e99f4;
+                                                            border-radius: 4px;
+                                                            -webkit-transition: all 0.3s ease;
+                                                            transition: all 0.3s ease;
+                                                            display: inline-block;
+                                                            margin-top: 0.5rem;
+                                                            white-space: nowrap;
+                                                            margin-right: 1rem;
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            ">PDF Format
+                                                        </button>
+                                                    </a>
+                                                    <a href= "https://docs.google.com/document/d/1AnsYvQPEdYhC0EuyFGIeUvRYCPpbNo_Os8zGlRQtdiw/edit?usp=sharing" target="_">
+                                                        <button style="
+                                                            font-size: 12px;
+                                                            font-weight: 300;
+                                                            padding: 5px 3px;
+                                                            color: #ec1839;
+                                                            border-radius: 4px;
+                                                            -webkit-transition: all 0.2s ease;
+                                                            transition: all 0.2s ease;
+                                                            display: inline-block;
+                                                            white-space: normal;
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            ">MSWord Format
+                                                        </button>
+                                                    </a>
+                                                </span>
+                                                </div>
                                             <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
@@ -586,7 +631,7 @@
                                 name="hidden_iframe"
                                 id="hidden_iframe"
                                 style="display: none;"
-                                onload="if(submitted) {window.location='https://portfolio-0509.netlify.app';}"
+                                onload="if(submitted) {window.location='https://my-portfolio09.netlify.app/';}"
                             ></iframe>
                             <!-- redirect user to your website after submitting to Google sheets end -->
                             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfObgTO8-nYoRYzyA-3f2OxYuW69NAPqoOL9YEi25MD0E3x5w/formResponse"
@@ -751,22 +796,6 @@
         </label>
     </div>
     <!-- Live Style Switcher End -->
-
-    <!-- PopUp Start -->
-    <div class="form-popup" id="myForm">
-        <div type="button" class="popup-close" onclick="closeForm()">&times;</div>
-        <form class="form-container">
-            <h2>Choose Format</h2>
-            <div class="centralize"> 
-                <label><b>PDF Format</b></label>
-                <button class="btn"> <a href="https://drive.google.com/file/d/1Cki_SHVhzapbTEoITNzK-r2Q-zLZfhoT/view?usp=share_link" style="color: #ffffff;" target="_">Dowload</a></button><br>
-                <br>
-                <label><b>Ms Word</b></label>
-                <button class="btn"> <a href="https://docs.google.com/document/d/1AnsYvQPEdYhC0EuyFGIeUvRYCPpbNo_Os8zGlRQtdiw/edit?usp=sharing" style="color: #ffffff;" target="_">Dowload</a></button><br>
-            </div>
-        </form>
-    </div>
-    <!-- PopUp End -->
 
     <!-- js -->
     <script src="js/script.js"></script>
